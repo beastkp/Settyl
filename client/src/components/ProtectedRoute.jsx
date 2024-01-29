@@ -20,9 +20,7 @@ const ProtectedRoute = ({ children }) => {
           },
         }
       );
-      console.log(res);
       if (res.status === 200) {
-        console.log(res.data);
         dispatch(setUser(res.data.data));
       } else {
         localStorage.clear();

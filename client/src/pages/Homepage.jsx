@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import JoditEditor from "jodit-react";
+import Editor from "../components/Editor";
 
 const Homepage = () => {
   const editor = useRef(null);
@@ -7,11 +7,7 @@ const Homepage = () => {
 
   return (
     <div className="">
-      <JoditEditor
-        ref={editor}
-        value={content}
-        onChange={(newContent) => setContent(newContent)}
-      />
+      <Editor/>
     </div>
   );
 };
