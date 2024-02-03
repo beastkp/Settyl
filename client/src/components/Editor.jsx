@@ -84,11 +84,7 @@ const Editor = ({ currentEmail }) => {
           </button>
         ) : null}
         {modal.showModal && <Modal />}
-        {copied && (
-          <p className="fixed top-[10%] right-[5%] z-10 rounded-md bg-slate-100 p-2">
-            Link Copied Successfully!
-          </p>
-        )}
+        
       </div>
 
       <div className="flex flex-col py-10 ">
